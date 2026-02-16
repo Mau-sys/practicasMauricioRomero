@@ -42,10 +42,7 @@
         <label for="email">Ingrese su correo electrónico:</label>
         <br>
         <br>
-        <input type="text" id="email" name="email" placeholder="@gmail.com">
-        <br>
-        <br>
-        <small>Formato: @gmail</small>
+        <input type="text" id="email" name="email" placeholder="Example@gmail.com">
         <br>
         <br>
         <label for="telefono">Ingrese su numero de telefono:</label>
@@ -54,10 +51,28 @@
         <input type="tel" id="telefono" name="telefono" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}">
         <br>
         <br>
-        <small>Formato: 1234-5678</small>
+        <p>Introduzca el numero de acompañantes.</p>
+
+        <label for="number">Acompañantes:</label>
+        <input type="number" step="1" min="1" max="5">
         <br>
         <br>
-        
+        <label for="Lugar">Coloque su lugar de origen</label>
+        <select id="Lugar" name="Lugar">
+         <option value="Ahuchapán">Ahuchapán</option>
+         <option value="Cabañas">Cabañas</option>
+         <option value="Chalatenango">Chalatenango</option>
+         <option value="Cuscatlán">Cuscatlán</option>
+         <option value="La Libertad">La Libertad</option>
+         <option value="La Paz">La Paz</option>
+         <option value="La Unión">La Unión</option>
+         <option value="Morazán">Morazán</option>
+         <option value="San Miguel">San Miguel</option>
+         <option value="San Salvador">San Salvador</option>
+         <option value="Santa Ana">Santa Ana</option>
+         <option value="Sonsonate">Sonsonate</option>
+         <option value="San Vicente">San Vicente</option>
+        </select>
    </form> 
 </body>
 </html>
