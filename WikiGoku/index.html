@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki goku</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
@@ -158,7 +159,69 @@
             <br>
             <br>
             <h2>Ficha técnica</h2>
-            
+
+<table border="1">
+    <tr>
+        <th>Nombre Completo</th>
+        <td>Son Goku</td>
+    </tr>
+    <tr>
+        <th>Serie</th>
+        <td>Dragon Ball</td>
+    </tr>
+    <tr>
+        <th>Creador</th>
+        <td>Akira Toriyama</td>
+    </tr>
+    <tr>
+        <th>Raza</th>
+        <td>Saiyajin</td>
+    </tr>
+    <tr>
+        <th>Planeta de origen</th>
+        <td>Planeta Vegeta</td>
+    </tr>
+    <tr>
+        <th>Técnica principal</th>
+        <td>Kamehameha</td>
+    </tr>
+    <tr>
+        <th>Transformación más poderosa</th>
+        <td>Ultra Instinto</td>
+    </tr>
+</table>
+<h2>Registro de Fans de Goku</h2>
+
+<form>
+    <label for="nombre">Nombre completo:</label><br><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" min="1" required><br><br>
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="text" id="email" name="email" placeholder="Example@gmail.com"><br><br>
+
+    <label>Transformación favorita:</label>
+
+<div class="radio-group">
+    <label><input type="radio" name="transformacion"> Super Saiyajin</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin 2</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin 3</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin Dios</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin Blue</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin Blue Kaiō-ken</label>
+    <label><input type="radio" name="transformacion"> Ultra Instinto (incompleto)</label>
+    <label><input type="radio" name="transformacion"> Ultra Instinto</label>
+</div>
+
+    <label for="comentario">¿Por qué eres fan de Goku?</label><br>
+    <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Registrarse">
+    <input type="reset" value="Limpiar">
+</form>
+
     </header>
 </body>
 </html>
