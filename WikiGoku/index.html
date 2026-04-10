@@ -8,26 +8,31 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Son Goku</h1>
-        
+<header>
+    <h1>Son Goku</h1>
+</header>
+
+<nav class="nav">
+    <a href="#historia">Historia</a>
+    <a href="#info">Información</a>
+    <a href="#ficha">Ficha</a>
+    <a href="#formulario">Registro</a>
+</nav>
+
+<main>
+    <section id="historia">
         <h2>Historia</h2>
-        <p>Son Goku es un guerrero saiyajin enviado a la Tierra cuando era un bebé para conquistarla.
+        <p>        <p>Son Goku es un guerrero saiyajin enviado a la Tierra cuando era un bebé para conquistarla.
             Su verdadero nombre es Kakarotto y nació en el planeta Vegeta. 
             Antes de que su mundo fuera destruido, fue enviado en una cápsula espacial para sobrevivir. 
             Al llegar a la Tierra, fue encontrado por un anciano llamado Son Gohan, quien lo crió como su nieto y le enseñó artes marciales.
             Tras golpearse la cabeza cuando era pequeño, Goku perdió su naturaleza agresiva y se convirtió en una persona noble, alegre y amante de los desafíos. 
             A lo largo de su vida ha protegido la Tierra enfrentándose a enemigos poderosos, superando sus límites constantemente y alcanzando nuevas transformaciones como el Super Saiyajin y el Ultra Instinto.</p>
             <br>
-            <h2>Información</h2>
-            <p>Raza:Saiyajin</p>
-            <p>Personalidad:Alegre, inocente, valiente</p>
-            <p>Habilidad principal:Kamehameha</p>
-            <p>Goku actualmente cuenta con una cantidad de 8 transformaciones en total y un estado:</p>
-            <ol>
                 <li>Kaiō-ken</li>
                 <p>es una técnica potenciadora 
                     que brinda al usuario un 
@@ -41,7 +46,7 @@
                     temporal por el período que 
                     quiera o pueda el que la 
                     utilice.</p>
-                <img src="img/Son Goku Kaioken in Crossverse.jpg" height="500">  
+                <img src="img/Son Goku Kaioken in Crossverse.jpg"  height="500">  
                 <br>
                 <br>
                 <li>Super saiyajin</li>
@@ -158,13 +163,58 @@
                     dominar completamente la técnica durante 
                     su lucha contra el guerrero del Universo 11, 
                     Jiren.</p>
-                <img src="img/Goku Ultra Instinto Dominado.jpg" height="500">
-            </ol>
-            <br>
-            <br>
-            <h2>Ficha técnica</h2>
+                <img src="img/Goku Ultra Instinto Dominado.jpg" height="500"></p>
+    </section>
 
-<table border="1">
+    <section id="info">
+           <h2>Información</h2>
+            <p>Raza:Saiyajin</p>
+            <p>Personalidad:Alegre, inocente, valiente</p>
+            <p>Habilidad principal:Kamehameha</p>
+            <p>Goku actualmente cuenta con una cantidad de 8 transformaciones en total y un estado:</p>
+            <ol>
+    </section>
+
+
+    <section id="ficha">
+        <h2>Ficha técnica</h2>
+        <label for="comentario">¿Por qué eres fan de Goku?</label>
+        <br>
+        <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea>
+        <br><br> 
+        <input type="submit" value="Registrarse">
+        <input type="reset" value="Limpiar"> 
+    </form>
+    </section>
+
+    <section id="formulario">
+        <h2>Registro de Fans</h2>
+        <form>
+    <label for="nombre">Nombre completo:</label><br><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" min="1" required><br><br>
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="text" id="email" name="email" placeholder="Example@gmail.com"><br><br>
+
+    <label>Transformación favorita:</label>
+
+<div class="radio-group">
+    <label><input type="radio" name="transformacion"> Super Saiyajin</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin 2</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin 3</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin Dios</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin Blue</label>
+    <label><input type="radio" name="transformacion"> Super Saiyajin Blue Kaiō-ken</label>
+    <label><input type="radio" name="transformacion"> Ultra Instinto (incompleto)</label>
+    <label><input type="radio" name="transformacion"> Ultra Instinto</label>
+</div>
+    </section>
+</main>
+
+  <table border="1">
     <tr>
         <th>Nombre Completo</th>
         <td>Son Goku</td>
@@ -193,39 +243,6 @@
         <th>Transformación más poderosa</th>
         <td>Ultra Instinto</td>
     </tr>
-</table>
-<h2>Registro de Fans de Goku</h2>
 
-<form>
-    <label for="nombre">Nombre completo:</label><br><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-
-    <label for="edad">Edad:</label><br>
-    <input type="number" id="edad" name="edad" min="1" required><br><br>
-
-    <label for="correo">Correo electrónico:</label><br>
-    <input type="text" id="email" name="email" placeholder="Example@gmail.com"><br><br>
-
-    <label>Transformación favorita:</label>
-
-<div class="radio-group">
-    <label><input type="radio" name="transformacion"> Super Saiyajin</label>
-    <label><input type="radio" name="transformacion"> Super Saiyajin 2</label>
-    <label><input type="radio" name="transformacion"> Super Saiyajin 3</label>
-    <label><input type="radio" name="transformacion"> Super Saiyajin Dios</label>
-    <label><input type="radio" name="transformacion"> Super Saiyajin Blue</label>
-    <label><input type="radio" name="transformacion"> Super Saiyajin Blue Kaiō-ken</label>
-    <label><input type="radio" name="transformacion"> Ultra Instinto (incompleto)</label>
-    <label><input type="radio" name="transformacion"> Ultra Instinto</label>
-</div>
-
-    <label for="comentario">¿Por qué eres fan de Goku?</label><br>
-    <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea><br><br>
-
-    <input type="submit" value="Registrarse">
-    <input type="reset" value="Limpiar">
-</form>
-
-    </header>
 </body>
 </html>
